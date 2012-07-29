@@ -52,6 +52,7 @@ let NERDTreeWinSize=50
 let NERDTreeIgnore = ['\.pyc$']
 autocmd VimEnter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+autocmd VimEnter * wincmd l
 
 highlight VertSplit ctermfg=LightGray ctermbg=bg
 highlight LineNr ctermfg=LightGray ctermbg=bg
