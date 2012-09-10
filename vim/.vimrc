@@ -43,7 +43,7 @@ autocmd BufWritePre *.py normal m`:%s/\s\+$//e``
 set number
 set ruler
 
-set background=light
+"set background=light
 "set background=dark
 "colorscheme solarized
 
@@ -54,11 +54,8 @@ autocmd VimEnter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 autocmd VimEnter * wincmd l
 
-"highlight VertSplit ctermfg=LightGray ctermbg=bg
-"highlight LineNr ctermfg=LightGray ctermbg=bg
-
-"highlight VertSplit ctermfg=0 ctermbg=bg
-"highlight LineNr ctermfg=0 ctermbg=bg
+highlight VertSplit ctermfg=LightGray 
+highlight LineNr ctermfg=LightGray 
 
 " Python.vim configuration options
 let python_highlight_all = 1
