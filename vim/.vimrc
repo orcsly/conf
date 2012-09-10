@@ -45,7 +45,7 @@ set ruler
 
 set background=light
 "set background=dark
-colorscheme solarized
+"colorscheme solarized
 
 let NERDTreeShowLineNumbers=1
 let NERDTreeWinSize=50
@@ -54,8 +54,8 @@ autocmd VimEnter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 autocmd VimEnter * wincmd l
 
-highlight VertSplit ctermfg=LightGray ctermbg=bg
-highlight LineNr ctermfg=LightGray ctermbg=bg
+"highlight VertSplit ctermfg=LightGray ctermbg=bg
+"highlight LineNr ctermfg=LightGray ctermbg=bg
 
 "highlight VertSplit ctermfg=0 ctermbg=bg
 "highlight LineNr ctermfg=0 ctermbg=bg
