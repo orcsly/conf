@@ -43,10 +43,6 @@ autocmd BufWritePre *.py normal m`:%s/\s\+$//e``
 set number
 set ruler
 
-"set background=light
-"set background=dark
-"colorscheme solarized
-
 let NERDTreeShowLineNumbers=1
 let NERDTreeWinSize=50
 let NERDTreeIgnore = ['\.pyc$']
@@ -55,18 +51,16 @@ autocmd VimEnter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 autocmd VimEnter * wincmd l
 
-highlight VertSplit ctermfg=LightGray 
-highlight LineNr ctermfg=LightGray 
+highlight VertSplit ctermfg=7
+highlight LineNr ctermfg=7
 highlight Comment ctermfg=14
-" highlight String ctermfg= 2  
-" highlight Operator ctermfg= 0 " black
-" highlight Statement ctermfg= 4 "blue
-" highlight Identifier ctermfg= 0 "red
-" highlight Special ctermfg = 0 "black
 
 " Python.vim configuration options
 let python_highlight_all = 1
 
 nnoremap <F3> :NumbersToggle<CR>
+map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+            \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+            \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
 " 
