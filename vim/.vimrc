@@ -57,12 +57,12 @@ autocmd VimEnter * wincmd l
 
 highlight VertSplit ctermfg=LightGray 
 highlight LineNr ctermfg=LightGray 
-highlight Comment ctermfg= 10
-highlight String ctermfg= 2 " yellow
-highlight Operator ctermfg= 0 " black
-highlight Statement ctermfg= 4 "blue
-highlight Identifier ctermfg= 0 "red
-highlight Special ctermfg = 0 "black
+highlight Comment ctermfg=14
+" highlight String ctermfg= 2  
+" highlight Operator ctermfg= 0 " black
+" highlight Statement ctermfg= 4 "blue
+" highlight Identifier ctermfg= 0 "red
+" highlight Special ctermfg = 0 "black
 
 " Python.vim configuration options
 let python_highlight_all = 1
