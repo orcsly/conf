@@ -27,14 +27,11 @@ nnoremap k gk
 " remap jj to the escape key to make moving from insert to normal mode easier
 inoremap jj <ESC>
 
-" tabs are converted to spaces 4 wide
-" set textwidth=79
-set tabstop=4
-set expandtab
-set softtabstop=4
-set shiftwidth=4
-set autoindent
-filetype indent on
+" navigating panes
+nmap <silent> <c-k> :wincmd k<CR> 
+nmap <silent> <c-j> :wincmd j<CR> 
+nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-l> :wincmd l<CR>
 
 " remove trailing whitespace
 autocmd BufWritePre *.py normal m`:%s/\s\+$//e``
@@ -63,4 +60,3 @@ map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans
             \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
             \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
-" 
