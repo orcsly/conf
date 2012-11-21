@@ -1,6 +1,11 @@
 syntax on
 
 " auto indenting
+setlocal smartindent
+setlocal tabstop=4
+setlocal softtabstop=4
+setlocal shiftwidth=4
+setlocal expandtab
 filetype indent plugin on
 
 set nocompatible
@@ -41,8 +46,8 @@ set number
 set ruler
 
 let NERDTreeShowLineNumbers=1
-let NERDTreeWinSize=50
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeWinSize=30
+let NERDTreeIgnore = ['\.pyc$', '\.swp$']
 let NERDTreeShowHidden = 1
 autocmd VimEnter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
@@ -51,6 +56,7 @@ autocmd VimEnter * wincmd l
 highlight VertSplit ctermfg=7
 highlight LineNr ctermfg=7
 highlight Comment ctermfg=14
+highlight StatusLine ctermfg=7 ctermbg=4
 
 " Python.vim configuration options
 let python_highlight_all = 1

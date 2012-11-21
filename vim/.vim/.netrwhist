@@ -1,4 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/Users/justin/Sites/lists.local.com/project/lists'
 let g:netrw_dirhist_2='/Users/justin/Sites/chocomap.com/ci/application/controllers/admin'
+let g:netrw_dirhist_3='ftp://foley@foleydesign.ca/'
+let g:netrw_dirhist_4='ftp://foley@foleydesign.ca/foleydesign/'
