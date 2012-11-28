@@ -48,7 +48,7 @@ set ruler
 
 let NERDTreeShowLineNumbers=1
 let NERDTreeWinSize=30
-let NERDTreeIgnore = ['\.pyc$', '\.swp$']
+let NERDTreeIgnore = ['\.pyc$', '\.swp$', '\.DS_Store$']
 let NERDTreeShowHidden = 1
 autocmd VimEnter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
@@ -56,7 +56,7 @@ autocmd VimEnter * wincmd l
 
 highlight VertSplit ctermfg=7
 highlight LineNr ctermfg=7
-highlight Comment ctermfg=14
+highlight Comment ctermfg=7
 highlight StatusLine ctermfg=7 ctermbg=4
 
 " Python.vim configuration options

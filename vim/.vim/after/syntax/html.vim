@@ -21,12 +21,33 @@ highlight htmlEndTag ctermfg=9
 highlight htmlTagN ctermfg=9
 highlight htmlTagName ctermfg=9
 highlight htmlArg ctermfg=9
-highlight String ctermfg=2
-highlight htmlLink ctermfg=0
+highlight String ctermfg=3
+highlight htmlLink ctermfg=None
+highlight htmlItalic ctermbg=None
+highlight htmlH1 ctermfg=10
+highlight htmlH2 ctermfg=10
+highlight htmlH3 ctermfg=10
+highlight htmlH4 ctermfg=10
 
-highlight javaScriptBoolean ctermfg=0
-highlight javaScriptMember ctermfg=9
-highlight javaScriptIdentifier ctermfg=4
-highlight javaScript ctermfg=10
-highlight javaScriptFunction ctermfg=3
 
+highlight cssBoxProp ctermfg=6
+highlight cssClassName ctermfg=6
+highlight cssValueLength ctermfg=6
+highlight cssTagName ctermfg=6
+highlight cssSelectorOp ctermfg=6
+
+highlight javaScriptBoolean ctermfg=12
+highlight javaScriptMember ctermfg=12
+highlight javaScriptIdentifier ctermfg=12
+highlight javaScript ctermfg=12
+highlight javaScriptFunction ctermfg=12
+highlight javaScriptStringS ctermfg=2
+highlight javaScriptBraces ctermfg=10
+highlight javaScriptParens ctermfg=10
+highlight javaScriptGlobal ctermfg=10
+
+highlight djangoStatement ctermfg=0
+highlight djangoTagBlock ctermfg=0
+highlight djangoFilter ctermfg=0
+highlight djangoVarBlock ctermfg=0
+highlight djangoArgument ctermfg=0

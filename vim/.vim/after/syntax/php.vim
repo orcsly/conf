@@ -8,7 +8,7 @@ setlocal autoindent
 filetype indent on
 
 " syntax coloring
-highlight Comment ctermfg=14
+highlight Comment ctermfg=12
 highlight String ctermfg=2 " green
 highlight Operator ctermfg=0    " black
 highlight Statement ctermfg=0 "4   " blue
@@ -37,6 +37,7 @@ highlight htmlH3 ctermfg=10
 highlight htmlH4 ctermfg=10
 highlight htmlString ctermfg=3
 highlight htmlNormal ctermfg=4
+highlight htmlItalic ctermbg=None
 
 highlight cssBoxProp ctermfg=11
 highlight cssValueLength ctermfg=11
@@ -52,4 +53,4 @@ highlight javascript ctermfg=11
 highlight javascriptIdentifier ctermfg=11
 highlight javascriptBraces ctermfg=11
 highlight javascriptOperator ctermfg=11
-
+highlight javascriptGlobal ctermfg=11
