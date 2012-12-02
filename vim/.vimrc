@@ -54,10 +54,22 @@ autocmd VimEnter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 autocmd VimEnter * wincmd l
 
-highlight VertSplit ctermfg=7
-highlight LineNr ctermfg=7
-highlight Comment ctermfg=7
-highlight StatusLine ctermfg=7 ctermbg=4
+if &background=='dark'
+	highlight VertSplit ctermfg=0 ctermbg=8
+	highlight LineNr ctermfg=0
+	highlight Comment ctermfg=0
+	highlight StatusLine ctermfg=0 ctermbg=10 " current focus
+	highlight StatusLineNC ctermfg=0 ctermbg=8 " non-focused
+else
+	highlight VertSplit ctermfg=7 ctermbg=15
+	highlight LineNr ctermfg=7
+	highlight Comment ctermfg=7
+	highlight StatusLine ctermfg=7 ctermbg=14 " current focus
+	highlight StatusLineNC ctermfg=7 ctermbg=15 " non-focused
+endif
+highlight String ctermfg=3
+
+"set background=dark
 
 " Python.vim configuration options
 let python_highlight_all = 1
