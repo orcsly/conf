@@ -47,19 +47,21 @@ set number
 set ruler
 
 let NERDTreeShowLineNumbers=1
-let NERDTreeWinSize=30
+let NERDTreeWinSize=50
 let NERDTreeIgnore = ['\.pyc$', '\.swp$', '\.DS_Store$']
 let NERDTreeShowHidden = 1
 autocmd VimEnter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 autocmd VimEnter * wincmd l
 
+nnoremap <c-D> :NERDTreeToggle<CR>
+
 if &background=='dark'
 	highlight VertSplit ctermfg=0 ctermbg=8
 	highlight LineNr ctermfg=0
 	highlight Comment ctermfg=0
-	highlight StatusLine ctermfg=0 ctermbg=10 " current focus
-	highlight StatusLineNC ctermfg=0 ctermbg=8 " non-focused
+	highlight StatusLine ctermfg=0 ctermbg=14 cterm=reverse " current focus
+	highlight StatusLineNC ctermfg=0 ctermbg=10 " non-focused
 else
 	highlight VertSplit ctermfg=7 ctermbg=15
 	highlight LineNr ctermfg=7
