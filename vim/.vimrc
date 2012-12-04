@@ -56,18 +56,18 @@ autocmd VimEnter * wincmd l
 
 nnoremap <c-D> :NERDTreeToggle<CR>
 
-if &background=='dark'
-	highlight VertSplit ctermfg=0 ctermbg=8
-	highlight LineNr ctermfg=0
-	highlight Comment ctermfg=0
-	highlight StatusLine ctermfg=0 ctermbg=14 cterm=reverse " current focus
-	highlight StatusLineNC ctermfg=0 ctermbg=10 " non-focused
-else
+if &background=='light'
 	highlight VertSplit ctermfg=7 ctermbg=15
 	highlight LineNr ctermfg=7
 	highlight Comment ctermfg=7
 	highlight StatusLine ctermfg=7 ctermbg=14 " current focus
 	highlight StatusLineNC ctermfg=7 ctermbg=15 " non-focused
+else
+	highlight VertSplit ctermfg=0 ctermbg=8
+	highlight LineNr ctermfg=0
+	highlight Comment ctermfg=0
+	highlight StatusLine ctermfg=0 ctermbg=14 cterm=reverse " current focus
+	highlight StatusLineNC ctermfg=0 ctermbg=10 " non-focused
 endif
 highlight String ctermfg=3
 
