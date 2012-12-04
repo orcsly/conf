@@ -29,7 +29,7 @@ if &background=="dark"
 	highlight htmlH4 ctermfg=10
 
 	highlight cssBoxProp ctermfg=6
-	highlight cssClassName ctermfg=6
+	highlight cssClassName ctermfg=13
 	highlight cssValueLength ctermfg=6
 	highlight cssTagName ctermfg=6
 	highlight cssSelectorOp ctermfg=6
