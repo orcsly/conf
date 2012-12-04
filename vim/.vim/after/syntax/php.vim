@@ -62,6 +62,7 @@ if &background=='dark'
 	highlight javascriptGlobal ctermfg=11
 	highlight javascriptType ctermfg=11
 	highlight javascriptStrings ctermfg=3
+    highlight javascriptParens ctermfg=11
 else
 	highlight Operator ctermfg=0    " black
 	highlight Statement ctermfg=0 "4   " blue
@@ -116,4 +117,5 @@ else
 	highlight javascriptGlobal ctermfg=11
 	highlight javascriptType ctermfg=11
 	highlight javascriptStrings ctermfg=3
+    highlight javascriptParens ctermfg=11
 endif
