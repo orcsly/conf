@@ -19,6 +19,7 @@ if &background=="dark"
 	highlight htmlEndTag ctermfg=9
 	highlight htmlTagN ctermfg=9
 	highlight htmlTagName ctermfg=9
+	highlight htmlSpecialTagName ctermfg=9
 	highlight htmlArg ctermfg=9
 	highlight String ctermfg=3
 	highlight htmlLink ctermfg=None
@@ -28,32 +29,34 @@ if &background=="dark"
 	highlight htmlH3 ctermfg=10
 	highlight htmlH4 ctermfg=10
 
-	highlight cssBoxProp ctermfg=6
-	highlight cssClassName ctermfg=13
-	highlight cssValueLength ctermfg=6
-	highlight cssTagName ctermfg=6
-	highlight cssSelectorOp ctermfg=6
+	highlight cssBoxProp ctermfg=14
+	highlight cssClassName ctermfg=14
+	highlight cssValueLength ctermfg=14
+	highlight cssTagName ctermfg=14
+	highlight cssSelectorOp ctermfg=14
+	highlight cssBraces ctermfg=14
 
-	highlight javaScriptBoolean ctermfg=4
-	highlight javaScriptMember ctermfg=4
-	highlight javaScriptIdentifier ctermfg=4
-	highlight javaScript ctermfg=4
-	highlight javaScriptFunction ctermfg=4
-	highlight javaScriptStringS ctermfg=3
-	highlight javaScriptBraces ctermfg=4
-	highlight javaScriptParens ctermfg=4
-	highlight javaScriptGlobal ctermfg=4
+	highlight javaScriptBoolean ctermfg=14
+	highlight javaScriptMember ctermfg=14
+	highlight javaScriptIdentifier ctermfg=14
+	highlight javaScript ctermfg=14
+	highlight javaScriptFunction ctermfg=14
+	highlight javaScriptStringS ctermfg=2
+	highlight javaScriptBraces ctermfg=14
+	highlight javaScriptParens ctermfg=14
+	highlight javaScriptGlobal ctermfg=14
 
-	highlight djangoStatement ctermfg=11
-	highlight djangoTagBlock ctermfg=11
-	highlight djangoFilter ctermfg=11
-	highlight djangoVarBlock ctermfg=11
-	highlight djangoArgument ctermfg=11
+	highlight djangoStatement ctermfg=10
+	highlight djangoTagBlock ctermfg=10
+	highlight djangoFilter ctermfg=10
+	highlight djangoVarBlock ctermfg=10
+	highlight djangoArgument ctermfg=10
 else
 	highlight htmlTag ctermfg=9
 	highlight htmlEndTag ctermfg=9
 	highlight htmlTagN ctermfg=9
 	highlight htmlTagName ctermfg=9
+	highlight htmlSpecialTagName ctermfg=9
 	highlight htmlArg ctermfg=9
 	highlight String ctermfg=3
 	highlight htmlLink ctermfg=None
