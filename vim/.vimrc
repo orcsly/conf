@@ -58,7 +58,7 @@ nnoremap <c-D> :NERDTreeToggle<CR>
 
 highlight String ctermfg=3
 highlight VertSplit ctermfg=0 ctermbg=8
-highlight LineNr ctermfg=0
+highlight LineNr ctermfg=10
 highlight Comment ctermfg=0
 highlight StatusLine ctermfg=0 ctermbg=14 cterm=reverse " current focus
 highlight StatusLineNC ctermfg=0 ctermbg=10 " non-focused

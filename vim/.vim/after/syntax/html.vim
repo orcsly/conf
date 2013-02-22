@@ -66,11 +66,11 @@ else
 	highlight htmlH3 ctermfg=10
 	highlight htmlH4 ctermfg=10
 
-	highlight cssBoxProp ctermfg=6
-	highlight cssClassName ctermfg=6
-	highlight cssValueLength ctermfg=6
-	highlight cssTagName ctermfg=6
-	highlight cssSelectorOp ctermfg=6
+	highlight cssBoxProp ctermfg=10
+	highlight cssClassName ctermfg=10
+	highlight cssValueLength ctermfg=10
+	highlight cssTagName ctermfg=10
+	highlight cssSelectorOp ctermfg=10
 
 	highlight javaScriptBoolean ctermfg=12
 	highlight javaScriptMember ctermfg=12

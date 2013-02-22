@@ -9,8 +9,9 @@ filetype indent on
 " Syntax Colors
 if &background=='dark'
 	"highlight String ctermfg=3
+	highlight normal ctermfg=14
 	highlight PythonFunction ctermfg=14
-	highlight PythonStatement ctermfg=14
+	highlight PythonStatement ctermfg=14 
 	highlight PythonBuiltinFunc ctermfg=14
 	highlight pythonExClass ctermfg=14
 	highlight pythonException ctermfg=14
@@ -20,14 +21,15 @@ if &background=='dark'
 	highlight pythonStrFormat ctermfg=14
 	highlight pythonPreCondit ctermfg=14
 	highlight pythonSpaceError ctermbg=None
-	highlight pythonComment ctermfg=0
+	highlight pythonComment ctermfg=10
 	highlight pythonDecorator ctermfg=14
 	highlight pythonDottedName ctermfg=14
 	highlight pythonBuiltinObj ctermfg=14
 	highlight pythonEscape ctermfg=14
-    highlight pythonRun ctermfg=10
+	highlight pythonRun ctermfg=10
 else
 	"highlight String ctermfg=3
+    highlight normal ctermfg=10
 	highlight PythonFunction ctermfg=10
 	highlight PythonStatement ctermfg=10
 	highlight PythonBuiltinFunc ctermfg=10
@@ -42,7 +44,7 @@ else
 	highlight pythonComment ctermfg=7
 	highlight pythonDecorator ctermfg=10
 	highlight pythonDottedName ctermfg=10
-	highlight pythonBuiltinObj ctermfg=0
-	highlight pythonEscape ctermfg=0
+	highlight pythonBuiltinObj ctermfg=10
+	highlight pythonEscape ctermfg=10
     highlight pythonRun ctermfg=14
 endif
