@@ -76,6 +76,8 @@ endif
 let python_highlight_all = 1
 
 nnoremap <F3> :NumbersToggle<CR>
+nnoremap <F5> :buffers<CR>:buffer<Space>
+
 map <F8> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
             \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
             \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
