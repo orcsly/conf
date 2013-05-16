@@ -12,6 +12,9 @@ filetype indent plugin on
 set nocompatible
 set modelines=0
 
+" turn on mouse scrolling
+set mouse=a
+
 nnoremap / /\v
 vnoremap / /\v
 
@@ -39,6 +42,15 @@ nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
+nmap <c-L> :tabnext<CR>
+nmap <d-h> :tabprevious<CR>
+"nmap <d-l> :tabnext<CR>
+"nmap <d-h> :tabprevious<CR>
+"nmap <m-l> :tabnext<CR>
+"nmap <m-h> :tabprevious<CR>
+"nmap <t-l> :tabnext<CR>
+"nmap <t-h> :tabprevious<CR>
+
 " remove trailing whitespace
 autocmd BufWritePre *.py normal m`:%s/\s\+$//e``
 
@@ -52,9 +64,10 @@ let NERDTreeIgnore = ['\.pyc$', '\.swp$', '\.DS_Store$']
 let NERDTreeShowHidden = 1
 autocmd VimEnter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-autocmd VimEnter * wincmd l
+autocmd VimEnter * wincmd w
 
 nnoremap <c-D> :NERDTreeToggle<CR>
+let NERDTreeMirror=1
 
 highlight String ctermfg=3
 highlight VertSplit ctermfg=0 ctermbg=8
@@ -83,3 +96,7 @@ map <F8> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<
             \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
 nnoremap <F4> :set hlsearch!<CR>
+
+" NERDTreeTabs settings
+let g:nerdtree_tabs_open_on_console_startup=1
+
