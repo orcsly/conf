@@ -42,14 +42,8 @@ nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
-nmap <c-L> :tabnext<CR>
-nmap <c-H> :tabprevious<CR>
-"nmap <d-l> :tabnext<CR>
-"nmap <d-h> :tabprevious<CR>
-"nmap <m-l> :tabnext<CR>
-"nmap <m-h> :tabprevious<CR>
-"nmap <t-l> :tabnext<CR>
-"nmap <t-h> :tabprevious<CR>
+nmap <c-]> :tabnext<CR>
+nmap <c-[> :tabprevious<CR>
 
 " remove trailing whitespace
 autocmd BufWritePre *.py normal m`:%s/\s\+$//e``
