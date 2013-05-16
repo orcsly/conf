@@ -43,7 +43,7 @@ nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
 nmap <c-L> :tabnext<CR>
-nmap <d-h> :tabprevious<CR>
+nmap <c-H> :tabprevious<CR>
 "nmap <d-l> :tabnext<CR>
 "nmap <d-h> :tabprevious<CR>
 "nmap <m-l> :tabnext<CR>
