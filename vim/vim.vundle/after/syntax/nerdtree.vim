@@ -1,29 +1,29 @@
 if &background=='dark'
-    hi treeDir ctermfg=3
-    hi treeDirSlash ctermfg=3
+    hi NERDTreeDir ctermfg=3
+    hi NERDTreeDirSlash ctermfg=3
 
-    hi treeExecFile ctermfg=14
-    hi treeUp ctermfg=4
-    hi treeHelp ctermfg=2
+    hi NERDTreeExecFile ctermfg=14
+    hi NERDTreeUp ctermfg=4
+    hi NERDTreeHelp ctermfg=2
 
-    hi treeClosable ctermfg=10
-    hi treeOpenable ctermfg=10
-    hi treePartFile ctermfg=10
-    hi treePart ctermfg=10
+    hi NERDTreeClosable ctermfg=10
+    hi NERDTreeOpenable ctermfg=10
+    hi NERDTreePartFile ctermfg=10
+    hi NERDTreePart ctermfg=10
 else
-    hi treeDir ctermfg=3
-    hi treeDirSlash ctermfg=3
+    hi NERDTreeDir ctermfg=3
+    hi NERDTreeDirSlash ctermfg=3
 
-    hi treeExecFile ctermfg=14
-    hi treeUp ctermfg=2
-    hi treeHelp ctermfg=2
+    hi NERDTreeExecFile ctermfg=14
+    hi NERDTreeUp ctermfg=2
+    hi NERDTreeHelp ctermfg=2
 
-    hi treeClosable ctermfg=10
-    hi treeOpenable ctermfg=10
-    hi treePartFile ctermfg=10
-    hi treePart ctermfg=10
+    hi NERDTreeClosable ctermfg=10
+    hi NERDTreeOpenable ctermfg=10
+    hi NERDTreePartFile ctermfg=10
+    hi NERDTreePart ctermfg=10
 
-    hi treeCWD ctermfg=4
-    hi treeLink ctermfg=13
-    hi treeRO ctermfg=13
+    hi NERDTreeCWD ctermfg=4
+    hi NERDTreeLink ctermfg=13
+    hi NERDTreeRO ctermfg=13
 endif
