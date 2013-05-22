@@ -18,6 +18,9 @@ Bundle 'sontek/minibufexpl.vim'
 syntax on
 filetype plugin indent on
 
+set encoding=utf-8
+set backspace=indent,eol,start
+
 nnoremap / /\v
 vnoremap / /\v
 
