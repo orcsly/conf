@@ -24,6 +24,13 @@ set backspace=indent,eol,start
 nnoremap / /\v
 vnoremap / /\v
 
+let mapleader = ","
+
+set colorcolumn=81
+set t_Co=256
+
+cnoremap help vert help 
+
 " case-sensitive search works better
 set ignorecase " all lowercase search terms search insensitively
 set smartcase  " Adding an uppercase letter searches sensitively
@@ -61,6 +68,15 @@ set ruler
 " code folding
 set foldmethod=indent
 set foldlevel=99
+
+" fold by tag
+nnoremap <leader>ft Vatzf 
+
+" sort CSS properties
+nnoremap <leader>S ?{<CR>jV/^\s*\}?$<CR>k:sort<CR>:noh<CR>
+
+" open a new vertical split and switch to it
+nnoremap <leader>w <C-w>v<C-w>l
 
 nnoremap <F3> :NumbersToggle<CR>
 nnoremap <F4> :set hlsearch!<CR>
@@ -145,12 +161,17 @@ highlight LineNr ctermfg=10
 highlight Comment ctermfg=0
 highlight StatusLine ctermfg=0 ctermbg=14 cterm=reverse " current focus
 highlight StatusLineNC ctermfg=0 ctermbg=10 " non-focused
+highlight ColorColumn ctermbg=0
 if &background=='light'
-        highlight VertSplit ctermfg=7 ctermbg=15
-        highlight LineNr ctermfg=7
-        highlight Comment ctermfg=7
-        highlight StatusLine ctermfg=7 ctermbg=14 " current focus
-        highlight StatusLineNC ctermfg=7 ctermbg=15 " non-focused
+    "highlight ColorColumn ctermbg=187
+    "highlight ColorColumn ctermbg=188
+    "highlight ColorColumn ctermbg=229 " yellow
+    highlight ColorColumn ctermbg=230 " pale yellow
+    highlight VertSplit ctermfg=7 ctermbg=15
+    highlight LineNr ctermfg=7
+    highlight Comment ctermfg=7
+    highlight StatusLine ctermfg=7 ctermbg=14 " current focus
+    highlight StatusLineNC ctermfg=7 ctermbg=15 " non-focused
 endif
 
 
