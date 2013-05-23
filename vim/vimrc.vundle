@@ -14,6 +14,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'klen/python-mode'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'sontek/minibufexpl.vim'
+Bundle 'myusuf3/numbers.vim'
 
 syntax on
 filetype plugin indent on
@@ -133,6 +134,8 @@ let g:pymode_folding = 0
 let g:jedi#use_tabs_not_buffers = 0
 let g:jedi#popup_on_dot = 0
 
+let $PYTHONHOME='/System/Library/Frameworks/Python.framework/Versions/Current'
+
 " Use <leader>l to toggle display of whitespace
 nmap <leader>l :set list!<CR>
 
@@ -178,4 +181,6 @@ if &background=='light'
     highlight StatusLineNC ctermfg=7 ctermbg=15 " non-focused
 endif
 
+" strip trailing whitespace
+autocmd BufWritePre *.py normal m`:%s/\s\+$//e``
 
