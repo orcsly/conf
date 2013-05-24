@@ -1,3 +1,4 @@
+
 set nocompatible
 filetype off
 
@@ -15,6 +16,9 @@ Bundle 'klen/python-mode'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'sontek/minibufexpl.vim'
 Bundle 'myusuf3/numbers.vim'
+Bundle 'scrooloose/syntastic'
+Bundle 'walm/jshint.vim'
+Bundle 'pangloss/vim-javascript'
 
 syntax on
 filetype plugin indent on
@@ -27,7 +31,7 @@ vnoremap / /\v
 
 let mapleader = ","
 
-set colorcolumn=81
+set colorcolumn=80
 set t_Co=256
 
 cnoremap help vert help 
@@ -83,6 +87,7 @@ nnoremap <leader>w <C-w>v<C-w>l
 nnoremap <F3> :NumbersToggle<CR>
 nnoremap <F4> :set hlsearch!<CR>
 nnoremap <F5> :buffers<CR>:buffer<Space>
+nnoremap <F6> :SyntasticCheck<CR>
 
 map <F8> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
             \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
@@ -133,6 +138,14 @@ let g:pymode_folding = 0
 let g:jedi#use_tabs_not_buffers = 0
 
 let $PYTHONHOME='/System/Library/Frameworks/Python.framework/Versions/Current'
+
+" Syntastic settings
+let g:syntastic_always_populate_loc_list=1
+let g:syntastic_auto_loc_list=1
+let g:syntastic_error_symbol='✗✗'
+let g:syntastic_warning_symbol='ww'
+let g:syntastic_style_error_symbol='s✗'
+let g:syntastic_style_warning_symbol='sw'
 
 " Use <leader>l to toggle display of whitespace
 nmap <leader>l :set list!<CR>
