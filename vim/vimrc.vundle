@@ -74,6 +74,7 @@ set ruler
 set number
 "set relativenumber
 set numberwidth=4
+let g:numbers_exclude = ['minibufexpl']
 
 " code folding
 set foldmethod=indent
