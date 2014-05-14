@@ -14,14 +14,17 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
 Bundle 'klen/python-mode'
 Bundle 'davidhalter/jedi-vim'
-Bundle 'sontek/minibufexpl.vim'
+Bundle 'fholgado/minibufexpl.vim'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'walm/jshint.vim'
 Bundle 'pangloss/vim-javascript'
+Bundle 'bling/vim-airline'
 
 syntax on
 filetype plugin indent on
+
+set mouse=a
 
 set encoding=utf-8
 set backspace=indent,eol,start
@@ -68,7 +71,8 @@ autocmd BufWritePre *.py normal m`:%s/\s\+$//e``
 
 " turn line numbering on
 set ruler
-set relativenumber
+set number
+"set relativenumber
 set numberwidth=4
 
 " code folding
