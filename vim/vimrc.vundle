@@ -34,7 +34,7 @@ vnoremap / /\v
 
 let mapleader = ","
 
-set colorcolumn=80
+" set colorcolumn=80
 set t_Co=256
 
 cnoremap help vert help 
