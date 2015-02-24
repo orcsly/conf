@@ -20,6 +20,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'walm/jshint.vim'
 Bundle 'pangloss/vim-javascript'
 Bundle 'bling/vim-airline'
+Bundle 'tell-k/vim-autopep8'
 
 syntax on
 filetype plugin indent on
@@ -35,7 +36,7 @@ vnoremap / /\v
 
 let mapleader = ","
 
-" set colorcolumn=80
+set colorcolumn=80
 set t_Co=256
 
 cnoremap help vert help 
@@ -170,7 +171,7 @@ set shiftwidth=4
 set expandtab
 
 let NERDTreeShowLineNumbers=1
-let NERDTreeWinSize=50
+let NERDTreeWinSize=40
 let NERDTreeIgnore = ['\.pyc$', '\.swp$', '\.DS_Store$']
 let NERDTreeShowHidden = 1
 autocmd VimEnter * NERDTree
